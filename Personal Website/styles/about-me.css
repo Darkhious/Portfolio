@@ -1,0 +1,398 @@
+/* UNIVERSAL UTILITIES */
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-panel, .bot-panel {
+    display: flex;
+    padding: 2% 2% 0% 2%;
+    width: 100%;
+}
+
+
+/* INTRODUCTION | SECTION 1 */
+#intro .top-panel {
+    height: 85%;
+    flex-wrap: wrap;
+}
+
+#intro .bot-panel {
+    padding: 0%;
+    height: 15%;
+}
+
+.profile-pic {
+    width: 40%;
+    height: 100%;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.profile-info {
+    display: flex;
+    width: 60%;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.profile-info h1 {
+    text-align: right;
+}
+
+.profile-info p {
+    margin: 1% 2% 0% 0%;
+    padding-left: 40%;
+}
+
+.contacts {
+    display: flex;
+    margin: 5% 2% 0% 0%;
+    width: 30%;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.contacts img {
+    margin-left: 5%;
+    width: 15%;
+}
+
+.skill-scroll {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    gap: var(--gap);
+}
+
+.skill-scroll ul {
+    display: flex;
+    min-width: 100%;
+    list-style: none;
+    flex-shrink: 0;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--gap);
+    animation: scroll 20s linear infinite;
+}
+
+.skill-scroll img {
+    width: 300%;
+}
+
+.skill-scroll img:hover {
+    animation: zoom-in 0.5s forwards;
+}
+
+.skill-scroll img:not(:hover) {
+    animation: zoom-out 0.5s forwards;
+}
+
+
+/* ACADEMIC | SECTION 2 */
+#achievements .top-panel, #acads .top-panel {
+    height: 15%;
+    flex-direction: column;
+    align-items: center;
+}
+
+#achievements .top-panel h1, #acads .top-panel h1 {
+    font-family: "Poppins-Bold";
+    text-align: center;
+}
+
+#acads .left-panel, #acads .right-panel {
+    display: flex;
+    width: 45%;
+    align-items: center;
+}
+
+#acads .left-panel {
+    justify-content: flex-end;
+}
+
+#acads .mid-panel {
+    display: flex;
+    width: 10%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#acads .mid-panel img:hover, #acads .mid-panel img:hover {
+    animation: zoom-in 0.5s forwards;
+}
+
+#acads .mid-panel img:not(:hover), #acads .mid-panel img:not(:hover) {
+    animation: zoom-out 0.5s forwards;
+}
+
+#acads .school-logo {
+    margin: 50% 0% 50% 0%;
+}
+
+#acads .mid-panel img {
+    width: 150px;
+}
+
+.card {
+    margin: 0% 5% 0% 5%;
+    padding: 3%;
+    width: 70%;
+    height: 50%;
+    border-radius: 1rem;
+    z-index: -1;
+}
+
+#college {
+    display: none;
+    margin-bottom: 10%;
+    animation: fade-left 2s forwards;
+}
+
+#high-school {
+    display: none;
+    margin-top: 20%;
+    flex-direction: column-reverse;
+    animation: fade-right 2s forwards;
+}
+            
+.timeline {
+    position: absolute;
+    width: 1%;
+    height: 70%;
+    min-width: 10px;
+    min-height: 400px;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+
+/* PROJECTS | SECTION 3 */
+#projs .left-panel {
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#projs .mid-panel {
+    padding: 3% 5%;
+    max-height: 1100px;
+    width: 50%;
+    height: 100%;
+}
+
+#projs .right-panel {
+    padding: 6% 2%;
+    width: 25%;
+}
+
+.post-container {
+    display: grid;
+    height: 100%;
+    grid-auto-flow: row;
+    gap: 20px;
+    overflow: hidden;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.post-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+}
+
+.post-card {
+    display: flex;
+    margin: 5% 0% 5% 0%;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    border-radius: 15px;
+    list-style-type: none;
+}
+
+.author {
+    display: flex;
+    margin: 2% 0% 0% 2%;
+    width: 100%;
+    height: 10%;
+}
+
+.author-pic {
+    min-width: 70px;
+    width: 9%;
+    min-height: 70px;
+}
+
+.author-pic img, .user-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.author-name {
+    display: flex;
+    padding-left: 2%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.description {
+    padding: 2% 0% 0% 2%;
+    width: 100%;
+    height: 10%;
+    text-indent: 1rem;
+}
+
+.content {
+    width: 100%;
+    height: 70%;
+}
+
+.content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post-buttons {
+    display: flex;
+    width: 100%;
+    height: 10%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.post-buttons img {
+    user-select: none;
+    cursor: pointer;
+}
+
+.comment-container {
+    display: none;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.comment-container .top-panel h3 {
+    margin-top: 2%;
+    padding-bottom: 2%;
+    width: 100%;
+    text-align: center;  
+}
+
+.comment {
+    padding: 5% 4%;
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-header {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.user-pic {
+    display: flex;
+    width: 15%;
+    height: 100%;
+}
+
+.user-name {
+    display: flex;
+    padding-left: 3%;
+    width: 85%;
+    height: 100%;
+    align-items: center;
+}
+
+.comment-content {
+    padding: 0% 0% 3% 18.5%;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ACHIEVEMENTS */
+#achievements .wrapper {
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.achievement, .achievement .top-panel, .achievement .mid-panel, #achieve-desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#achieve-desc {
+    position: absolute;
+    display: flex;
+    max-width: 750px;
+    max-height: 120px;
+    width: 50%;
+    height: 15%;
+    min-width: 300px;
+    min-height: 150px;
+    border-radius: 1rem;
+    cursor: pointer;
+    opacity: 0%;
+    z-index: 1;
+}
+
+.achievement {
+    padding: 1%;
+    width: 15rem;
+    height: 15rem;
+    flex-direction: column;
+    border-radius: 1.5rem;
+}
+
+.achievement button {
+    display: block;
+    margin: auto;
+}
+
+.achievement .top-panel {
+    height: 30% !important;
+}
+
+.achievement .top-panel img {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+}
+
+.achievement .mid-panel {
+    width: 100%;
+    height: 50% !important;
+}
+
+.achievement .bot-panel {
+    height: 20% !important;
+}

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Christian Mamplata</title>
+        <link rel="stylesheet" href="../styles/animations.css" />
+        <link rel="stylesheet" href="../styles/about-me.css" />
+        <link rel="stylesheet" href="../styles/utilities.css" />
+
+        <style>
+            @font-face {
+                font-family: "Poppins";
+                src: url(../fonts/Poppins-Regular.ttf);
+            }
+
+            @font-face {
+                font-family: "Poppins-Bold";
+                src: url(../fonts/Poppins-Bold.ttf);
+            }
+
+            :root {
+                --gap: 14rem;
+
+                scroll-behavior: smooth;
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                color: #FFF;
+                font-family: "Poppins", "Tahoma", "Arial", sans-serif;
+            }
+
+            body {
+                background-color: #010d1f;
+            }
+
+            section {
+                overflow: hidden;
+            }
+
+            h1 {
+                font-size: clamp(1px, 4vw + 2rem, 80px);
+            }
+
+            h2 {
+                font-size: clamp(1px, 2vw + 2rem, 60px);
+            }
+
+            p {
+                text-align: justify;
+            }
+
+            button {
+                background-color: transparent;
+                border: none;
+                user-select: none;
+                cursor: pointer;
+            }
+
+            /* INTRODUCTION | SECTION 1 */
+            
+            #intro .bot-panel {
+                background-color: #010916;
+            }
+
+            /* ACADEMIC | SECTION 2 */
+
+            .card {
+                background-color: #010916;
+            }
+
+            .card h2 {
+                font-size: clamp(12px, 1vw + 0.5rem, 30px);
+            }
+
+            .card h3 {
+                font-size: clamp(9px, 0.5vw + 0.5rem, 30px);
+            }
+
+
+            .timeline {
+                background-color: #FFF;
+            }
+
+            /* PROJECTS | SECTION 3 */
+            #projs h1 {
+                font-size: clamp(100px, 11vw + 0.5rem, 200px);
+                line-height: 100%;
+                user-select: none;
+            }
+
+            .post-card {
+                background-color: #010916;
+            }
+
+            .comment-container {
+                background-color: #010916;
+            }
+
+            .comment-container .top-panel h3 {
+                border-bottom: 1px solid #adadad;
+            }
+
+            .comment-content {
+                border-bottom: 1px solid rgba(173, 173, 173, .2);
+            }
+
+            .comment-content p {
+                text-align: justify;
+            }
+
+            /* ACHIEVEMENTS */
+            #achieve-desc {
+                background-color: #010916;
+            }
+
+            .achievement {
+                background-color: #010916;
+            }
+
+        </style>
+    </head>
+    <body>
+        <section id="intro">
+            <div class="container">
+                <div class="top-panel">
+                    <div class="profile-pic">
+                        <img src="../img/christian.png" alt="A profile picture of Christian Mamplata">
+                    </div>
+                    <div class="profile-info">
+                        <h1>Hi, I am <span class="emphasize">Christian Mamplata</span></h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam quia ea eveniet? Non incidunt aliquam id, repellat suscipit, tempora veniam quam illo natus totam repellendus, minima quae accusantium laborum amet?</p>
+                        <div class="contacts">
+                            <img src="../img/icons/social-media/facebook-icon.svg" alt="Facebook">
+                            <img src="../img/icons/social-media/instagram-icon.svg" alt="Instagram">
+                            <img src="../img/icons/social-media/google-icon.svg" alt="Google">
+                            <img src="../img/icons/social-media/github-icon.svg" alt="Github">
+                            <img src="../img/icons/social-media/discord-icon.svg" alt="Discord">
+                        </div>
+                    </div>
+                </div>
+                <div class="bot-panel">
+                    <div class="skill-scroll">
+                        <ul>
+                            <li><img src="../img/icons/skills/html-icon.svg" alt="HTML"></li>
+                            <li><img src="../img/icons/skills/css-icon.svg" alt="CSS"></li>
+                            <li><img src="../img/icons/skills/javascript-icon.svg" alt="JS"></li>
+                            <li><img src="../img/icons/skills/java-icon.svg" alt="JAVA"></li>
+                            <li><img src="../img/icons/skills/cplusplus-icon.svg" alt="C++"></li>
+                            <li><img src="../img/icons/skills/python-icon.svg" alt="PYTHON"></li>
+                            <li><img src="../img/icons/skills/php-icon.svg" alt="PHP"></li>
+                            <li><img src="../img/icons/skills/sql-icon.svg" alt="SQL"></li>
+                        </ul>
+                        <ul>
+                            <li><img src="../img/icons/skills/html-icon.svg" alt="HTML"></li>
+                            <li><img src="../img/icons/skills/css-icon.svg" alt="CSS"></li>
+                            <li><img src="../img/icons/skills/javascript-icon.svg" alt="JS"></li>
+                            <li><img src="../img/icons/skills/java-icon.svg" alt="JAVA"></li>
+                            <li><img src="../img/icons/skills/cplusplus-icon.svg" alt="C++"></li>
+                            <li><img src="../img/icons/skills/python-icon.svg" alt="PYTHON"></li>
+                            <li><img src="../img/icons/skills/php-icon.svg" alt="PHP"></li>
+                            <li><img src="../img/icons/skills/sql-icon.svg" alt="SQL"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="acads">
+            <div class="container">
+                <div class="top-panel">
+                    <h1>Academic Background</h1>
+                </div>
+                <div class="wrapper">
+                    <div class="left-panel">
+                        <div class="card" id="college">
+                            <h2 class="text-right"><span class="emphasize">Bachelor of Science in Information Technology</span></h2>
+                            <h3 class="text-right">Nueva Ecija University of Science and Technology</h3>
+                            <h3 class="text-right">2023 - Present</h3>
+                            <hr />
+                            <br />
+                            <p>I am studying at this university to further develop my talents, absorb new skills, and take on challenges that are out of my comfort zone. This university also allowed me to meet certain people who would push me further and beyond my limitations.</p>
+                        </div>
+                    </div>
+                    <div class="mid-panel">
+                        <div class="school-logo">
+                            <button type="button" onclick="showNEUST()"><img src="../img/logo/neust_logo.png" alt="NEUST LOGO"></button>
+                        </div>
+                        <div class="school-logo">
+                            <button type="button" onclick="showZNHS()"><img src="../img/logo/znhs-logo.png" alt="NEUST LOGO"></button>
+                        </div>
+                        <div class="timeline"></div>
+                    </div>
+                    <div class="right-panel">
+                        <div class="card" id="high-school">
+                            <h2><span class="emphasize">Information and Communications Technology</span></h2>
+                            <h3>Zaragoza National High School</h3>
+                            <h3>2016 - 2023</h3>
+                            <hr />
+                            <br />
+                            <p>During my junior high school, I qualified to be part of the Special Program for Information and Communications Technology. It was my first step of being a Game Developer and I despised it. In the end, I continued it up to senior high school and enjoyed every single bit of it.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projs">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="left-panel">
+                        <h1 class="emphasize">PR</h1>
+                        <h1 class="emphasize">OJ</h1>
+                        <h1 class="emphasize">EC</h1>
+                        <h1 class="emphasize">TS</h1>
+                    </div>
+
+                    <!-- POST SECTIONS -->
+
+                    <div class="mid-panel">
+                        <ul class="post-container">
+                            <li class="post-card" id="post1">
+                                <div class="author">
+                                    <div class="author-pic">
+                                        <img draggable="false" src="../img/2x2/christian_2x2.png" alt="Christian">
+                                    </div>
+                                    <div class="author-name">
+                                        <h3>Christian Mamplata</h3>
+                                        <p class="de-emphasis">November 2, 2024</p>
+                                    </div>
+                                </div>
+                                <div class="description">
+                                    <p>This portfolio! I made it along with Marnie as the Graphic Designer</p>
+                                </div>
+                                <div class="content">
+                                    <img draggable="false" src="../img/projects/portfolio.png" alt="Content">
+                                </div>
+                                <div class="post-buttons">
+                                    <img id="heart1" src="../img/icons/post/heart-outline.svg" alt="Heart React" onclick="heartControl(1)">
+                                    <img id="commentIcon1" src="../img/icons/post/comment-outline.svg" alt="Comment" onclick="commentControl(1)">
+                                    <img id="share1" src="../img/icons/post/share-outline.svg" alt="Share" onclick="shareControl(1)">
+                                </div>
+                            </li>
+
+                            <li class="post-card" id="post2">
+                                <div class="author">
+                                    <div class="author-pic">
+                                        <img draggable="false" src="../img/2x2/christian_2x2.png" alt="Christian">
+                                    </div>
+                                    <div class="author-name">
+                                        <h3>Christian Mamplata</h3>
+                                        <p class="de-emphasis">August 30, 2024</p>
+                                    </div>
+                                </div>
+                                <div class="description">
+                                    <p>Arduino Project: RFID/NFC Attendance System. It also have a database!</p>
+                                </div>
+                                <div class="content">
+                                    <img draggable="false" src="../img/projects/arduino.jpg" alt="Content">
+                                </div>
+                                <div class="post-buttons">
+                                    <img id="heart2" src="../img/icons/post/heart-outline.svg" alt="Heart React" onclick="heartControl(2)">
+                                    <img id="commentIcon2" src="../img/icons/post/comment-outline.svg" alt="Comment" onclick="commentControl(2)">
+                                    <img id="share2" src="../img/icons/post/share-outline.svg" alt="Share" onclick="shareControl(2)">
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <!--  COMMENT SECTIONS -->
+
+                    <div class="right-panel">
+                        <div class="comment-container" id="comment1">
+                            <div class="top-panel">
+                                <h3>Comments</h3>
+                            </div>
+                            <div class="comment">
+                                <div class="comment-header">
+                                    <div class="user-pic">
+                                        <img src="../img/2x2/marnie_2x2.png" alt="Marnie">
+                                        
+                                    </div>
+                                    <div class="user-name">
+                                        <h5>Marnigga T^T <span class="de-emphasis">November 2, 2024</span></h5>
+                                    </div>
+                                </div>
+                                <div class="comment-content">
+                                    <p>Ako lang toh guys</p>
+                                </div>
+                            </div>
+
+                            <div class="comment">
+                                <div class="comment-header">
+                                    <div class="user-pic">
+                                        <img src="../img/icons/post/user.png" alt="Jubelle">
+                                        
+                                    </div>
+                                    <div class="user-name">
+                                        <h5>Bujelle >_< <span class="de-emphasis">November 3, 2024</span></h5>
+                                    </div>
+                                </div>
+                                <div class="comment-content">
+                                    <p class="emphasize">@highlights</p>
+                                </div>
+                            </div>
+
+                            <div class="comment">
+                                <div class="comment-header">
+                                    <div class="user-pic">
+                                        <img src="../img/icons/post/user.png" alt="Jubelle">
+                                        
+                                    </div>
+                                    <div class="user-name">
+                                        <h5>Lorens <span class="de-emphasis">November 3, 2024</span></h5>
+                                    </div>
+                                </div>
+                                <div class="comment-content">
+                                    <p>di mo tigilan XD</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="comment-container" id="comment2">
+                            <div class="top-panel">
+                                <h3>Comments</h3>
+                            </div>
+                            <div class="comment">
+                                <div class="comment-header">
+                                    <div class="user-pic">
+                                        <img src="../img/2x2/marnie_2x2.png" alt="Marnie">
+                                        
+                                    </div>
+                                    <div class="user-name">
+                                        <h5>Marnigga T^T <span class="de-emphasis">August 30, 2024</span></h5>
+                                    </div>
+                                </div>
+                                <div class="comment-content">
+                                    <p>Wow!!</p>
+                                </div>
+                            </div>
+
+                            <div class="comment">
+                                <div class="comment-header">
+                                    <div class="user-pic">
+                                        <img src="../img/icons/post/user.png" alt="Jubelle">
+                                        
+                                    </div>
+                                    <div class="user-name">
+                                        <h5>Bujelle >_< <span class="de-emphasis">August 30, 2024</span></h5>
+                                    </div>
+                                </div>
+                                <div class="comment-content">
+                                    <p>Nice Work! (•̀ᴗ•́)و ̑̑</p>
+                                </div>
+                            </div>
+
+                            <div class="comment">
+                                <div class="comment-header">
+                                    <div class="user-pic">
+                                        <img src="../img/icons/post/user.png" alt="Jubelle">
+                                        
+                                    </div>
+                                    <div class="user-name">
+                                        <h5>Lorens <span class="de-emphasis">August 30, 2024</span></h5>
+                                    </div>
+                                </div>
+                                <div class="comment-content">
+                                    <p>Boi send code</p>
+                                </div>
+                            </div>
+
+                            <div class="comment">
+                                <div class="comment-header">
+                                    <div class="user-pic">
+                                        <img src="../img/icons/post/user.png" alt="Jubelle">
+                                        
+                                    </div>
+                                    <div class="user-name">
+                                        <h5>Nhen Elly <span class="de-emphasis">August 30, 2024</span></h5>
+                                    </div>
+                                </div>
+                                <div class="comment-content">
+                                    <p>^o^</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="achievements">
+            <div class="container">
+                <div class="top-panel">
+                    <h1>Achievements</h1>
+                </div>
+                <div class="wrapper">
+                    <div id="achieve-desc" onclick="hideDescription()">
+                        <p id="info"></p>
+                    </div>
+
+                    <div class="achievement">
+                        <div class="top-panel">
+                            <img class="invert-color" src="../img/icons/achievements/medal-icon.svg" alt="Medal">
+                        </div>
+                        <div class="mid-panel">
+                            <h3>JHS High Honor</h3>
+                        </div>
+                        <div class="bot-panel">
+                            <button class="de-emphasis" id="achievement1" onclick="showDescription(1)">See more...</button>
+                        </div>
+                    </div>
+
+                    <div class="achievement">
+                        <div class="top-panel">
+                            <img class="invert-color" src="../img/icons/achievements/medal-icon.svg" alt="Medal">
+                        </div>
+                        <div class="mid-panel">
+                            <h3>SHS High Honor</h3>
+                        </div>
+                        <div class="bot-panel">
+                            <button class="de-emphasis" id="achievement2" onclick="showDescription(2)">See more...</button>
+                        </div>
+                    </div>
+
+                    <div class="achievement">
+                        <div class="top-panel">
+                            <img class="invert-color" src="../img/icons/achievements/medal-icon.svg" alt="Medal">
+                        </div>
+                        <div class="mid-panel">
+                            <h3>Zaragoza's Future</h3>
+                        </div>
+                        <div class="bot-panel">
+                            <button class="de-emphasis" id="achievement3" onclick="showDescription(3)">See more...</button>
+                        </div>
+                    </div>
+
+                    <div class="achievement">
+                        <div class="top-panel">
+                            <img class="invert-color" src="../img/icons/achievements/medal-icon.svg" alt="Medal">
+                        </div>
+                        <div class="mid-panel">
+                            <h3>Want some Coffee?</h3>
+                        </div>
+                        <div class="bot-panel">
+                            <button class="de-emphasis" id="achievement4" onclick="showDescription(4)">See more...</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="../scripts/about-me.js" defer></script>
+    </body>
+</html>
