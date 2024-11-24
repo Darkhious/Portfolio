@@ -1,0 +1,74 @@
+/* INDEX */
+
+@keyframes pop-up {
+    from { bottom: -100%; }
+    to { bottom: 0%; }
+}
+
+@keyframes wobble {
+    0% { bottom: 0%; }
+    25% { bottom: 1%; }
+    50% { bottom: 0%; }
+    75% { bottom: 1%; }
+    100% { bottom: 0%; }
+}
+
+/* ABOUT ME */
+
+@keyframes forward-typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes backward-typing {
+    from { width: 100%; }
+    to { width: 0; }
+}
+
+@keyframes cursor {
+    50% { border-color: transparent; }
+}
+
+@keyframes scroll {
+    to { transform: translateX(calc(-100% - var(--gap))); }
+}
+
+@keyframes zoom-in {
+    to { transform: scale(1.5); }
+}
+
+@keyframes zoom-out {
+    from { transform: scale(1.5) ;}
+    to { transform: scale(1); }
+}
+
+@keyframes fade-left {
+    from { width: 50%; margin: 0% -20% 0% 0%; opacity: 0%; }
+    to { opacity: 100%; }
+}
+
+@keyframes fade-right {
+    from { width: 50%; margin: 0% 0% 0% -20%; opacity: 0%; }
+    to { opacity: 100%; }
+}
+
+@keyframes pop-up {
+    0% { transform: translateY(300%); opacity: 0%; }
+    50% { transform: translateY(-55%); }
+    75% { transform: translateY(-45%);}
+    100% { transform: translateY(-50%); opacity: 100%; }
+}
+
+@keyframes pop-down {
+    0% { transform: translateY(-50%); opacity: 100%; }
+    50% { transform: translateY(-55%); }
+    100% { transform: translateY(200%); display: none; }
+}
+
+@keyframes blur {
+    to { filter: blur(1rem);}
+}
+
+@keyframes sharp {
+    to { filter: blur(0rem);}
+}
