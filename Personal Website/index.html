@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="styles/animations.css" />
+        <link rel="stylesheet" href="styles/index-style.css" />
+
+        <style>
+            
+
+            
+        </style>
+    </head>
+    <body>
+        <!-- BANNER SECTION -->
+        <section id="banner">
+            <video id="the-archives" autoplay loop muted>
+                <source src="vid/the-archives.mp4">
+                <source src="vid/the-archives.webm">
+                <source src="vid/the-archives.mov">
+            </video>
+            <!-- PARENT CONTAINER -->
+
+            <div class="container">
+                <!-- CONTENTS -->
+                <topbar>
+
+                </topbar>
+                <div class="play-button">
+                    <a href="#character"><img src="img/buttons/start-button.png" alt="Play Button"></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHOOSE YOUR FIGHTER -->
+        <section id="character">
+
+            <div class="container">
+                <div class="top-panel">
+                    <h1>SELECT A PLAYER</h1>
+                </div>
+                <div class="select-player">
+                    <a id="female" href="webpages/marnie.html"><img src="img/our-image/artist.png" alt="Player Marnie"></a>
+                    <a id="male" href="webpages/christian.html"><img src="img/our-image/coder.png" alt="Player Christian"></a>
+                </div>
+                <div class="bot-panel">
+                    <button type="button" onclick="changePlayer()">Male</button>
+                </div>
+            </div>
+
+        </section>
+
+        <script>
+            const coverVid = document.getElementById("the-archives");
+            const femalePlayer = document.getElementById("female");
+            const malePlayer = document.getElementById("male");
+
+            let change = true;
+
+            coverVid.ontimeupdate = function() {
+                if (coverVid.currentTime > 6) {
+                    coverVid.currentTime = 2.7;
+                }
+            }
+
+            function showChristian() {
+                document.getElementById("person").src = "img/christian.png";
+                document.getElementById("male").style.filter = "brightness(100%)"
+                document.getElementById("female").style.filter = "brightness(50%)"
+                document.getElementById("name").innerHTML = "Christian";
+            }
+
+            function showMarnie() {
+                document.getElementById("person").src = "img/marnie.png";
+                document.getElementById("male").style.filter = "brightness(50%)"
+                document.getElementById("female").style.filter = "brightness(100%)"
+                document.getElementById("name").innerHTML = "Marnie";
+            }
+
+            function changePlayer() {
+                if (change) {
+                    femalePlayer.style.display = "none";
+                    malePlayer.style.display = "block";
+
+                    change = false;
+                } else {
+                    femalePlayer.style.display = "block";
+                    malePlayer.style.display = "none";
+
+                    change = true;
+                }
+            }
+        </script>
+    </body>
+</html>
