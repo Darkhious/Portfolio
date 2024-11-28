@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Christian</title>
+        <link rel="icon" type="image/x-icon" href="../img/logo/favicon.png">
+        <link rel="stylesheet" href="../styles/about-me.css">
+        <style>
+            @media only screen and (max-width: 600px) {
+                .left-panel {
+                    width: 90% !important;
+                }
+
+                .left-panel img {
+                    display: block !important;
+                    margin-bottom: 10% !important;
+                }
+
+                .right-panel {
+                    display: none !important;
+                }
+            
+            }
+
+            @font-face {
+                font-family: "Poppins";
+                src: url(../fonts/Poppins-Regular.ttf);
+            }
+
+            @font-face {
+                font-family: "Poppins-Bold";
+                src: url(../fonts/Poppins-Bold.ttf);
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                color: #FFF;
+                font-family: "Poppins", "Tahoma", "Arial", sans-serif;
+            }
+
+            body {
+                background-color: #010d1f;
+                background-image: url(../img/background/contact-bg.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .container {
+                padding: 5%;
+                width: 100vw;
+                height: 100vh;
+            }
+
+            .wrapper {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .left-panel {
+                display: flex;
+                padding: 2%;
+                width: 50%;
+                height: 100%;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .left-panel img {
+                display: none;
+            }
+
+            .right-panel {
+                display: flex;
+                padding: 5%;
+                width: 50%;
+                height: 100%;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            input {
+                display: block;
+                margin: 1% 0% 5% 0%;
+                min-height: 30px;
+                max-height: 60px;
+                width: 100%;
+                height: 15%;
+                font-size: clamp(11px, 2vw, 15px);
+                text-indent: 1rem;
+                background-color: whitesmoke;
+                border: 1px solid rgba(100, 100, 100, .2);
+                border-radius: 20px;
+                
+            }
+
+            textarea {
+                padding: 2%;
+                width: 100%;
+                font-size: clamp(11px, 2vw, 15px);
+                background-color: whitesmoke;
+                border: 1px solid rgba(100, 100, 100, .2);
+                border-radius: 20px;
+                resize: none;
+            }
+
+            button {
+                display: block;
+                margin: 5% 0%;
+                min-width: 150px;
+                max-height: 60px;
+                width: 25%;
+                height: 15%;
+                font-size: 1rem;
+                font-weight: 900;
+                background-color: #5400b4;
+                border: none;
+                border-radius: 20px;
+                cursor: pointer;
+            }
+
+            .contacts img {
+                margin: auto 3% auto 0%;
+                width: 7%;
+                filter: invert(100%);
+            }
+
+            #contact-desc {
+                margin: 3% 0%;
+                font-size: clamp(12px, 2vw, 24px);
+                text-align: justify;
+            }
+
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div class="navbar">
+                <a href="../index.html"><img src="../img/logo/logo.png" alt="The Archives Logo"></a>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="wrapper">
+                <div class="left-panel">
+                    <img src="../img/icons/contact/contact-title.png" alt="Contact Me">
+                    <form action="https://formspree.io/f/xwpkqjej" method="POST">
+                        <label for="Name">Name</label>
+                        <input type="text" name="Name" placeholder="Enter Name..." autocomplete="off" required />
+                        <label for="email">Email</label>
+                        <input type="email" name="email" placeholder="Email Address" autocomplete="off" required />
+                        <textarea rows="5" name="message" id="message" placeholder="Enter message..." autocomplete="off" required></textarea>
+                        <button type="submit">Send Message.</button>
+                    </form>
+                </div>
+                <div class="right-panel">
+                    <img src="../img/icons/contact/contact-title.png" alt="Contact Me">
+                    <p id="contact-desc">For inquiries, technical support, or collaboration opportunities, use the contact details below.</p>
+                    <div class="reach-me">
+                        <div class="contacts">
+                            <img src="../img/icons/contact/phone-icon.svg" alt="Facebook">
+                            <p>+6398-5767-0965</p>
+                        </div>
+                        <div class="contacts">
+                            <img src="../img/icons/contact/mail-icon.svg" alt="Google">
+                            <p>christianmamplata@gmail.com</p>
+                        </div>
+                        <div class="contacts">
+                            <img src="../img/icons/contact/home-icon.svg" alt="Github">
+                            <p>Conception, Zaragoza, Nueva Ecija, Philippines</p>
+                        </div>          
+                    </div>            
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

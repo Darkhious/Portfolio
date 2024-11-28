@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="icon" type="image/x-icon" href="img/logo/favicon.png">
+        <link rel="stylesheet" href="styles/animations.css" />
+        <link rel="stylesheet" href="styles/index-style.css" />
+    </head>
+    <body>
+        <!-- NAVBAR -->
+        <nav>
+            <div class="navbar">
+                <a href="index.html"><img src="img/logo/logo.png" alt="The Archives Logo"></a>
+            </div>
+        </nav>
+
+        <!-- NAVBAR -->
+
+        <!-- BANNER SECTION -->
+        <section id="banner">
+            <video id="the-archives" autoplay loop muted>
+                <source id="vidmp4" src="vid/the-archives.mp4" type="video/mp4">
+                <source src="vid/the-archives.webm" type="video/webm">
+                <source src="vid/the-archives.mov" type="video/mov">
+            </video>
+            <!-- PARENT CONTAINER -->
+
+            <div class="container">
+                <!-- CONTENTS -->
+                <topbar>
+
+                </topbar>
+                <div class="play-button">
+                    <a href="#character"><img src="img/buttons/start-button.png" alt="Play Button"></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHOOSE YOUR FIGHTER -->
+        <section id="character">
+
+            <div class="container">
+                <div class="top-panel">
+                    <h1>SELECT A PLAYER</h1>
+                </div>
+                <div class="select-player">
+                    <a id="female" href="webpages/marnie.html"><img src="img/our-image/artist.png" alt="Player Marnie"></a>
+                    <a id="male" href="webpages/christian.html"><img src="img/our-image/coder.png" alt="Player Christian"></a>
+                </div>
+                <div class="bot-panel">
+                    <button type="button" onclick="changePlayer()">
+                        <img id="arrow" src="img/icons/signs/right-arrow.png" alt="Arrow Key">
+                    </button>
+                </div>
+            </div>
+
+        </section>
+
+        <script src="scripts/index-script.js" defer></script>
+    </body>
+</html>
