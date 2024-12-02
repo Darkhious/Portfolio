@@ -82,6 +82,7 @@ function shareControl(num) {
 function showDescription(num) {
     achievementDesc.classList.remove("pop-down");
     achievementDesc.classList.add("pop-up");
+    achievementDesc.style.display = "flex";
 
     for (var i = 0; i < achieveList.length; i++) {
         achieveList[i].classList.remove("focus");
